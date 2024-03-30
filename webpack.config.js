@@ -44,7 +44,8 @@ module.exports = (_, argv) => ({
       name: "StudentApp2",
       filename: "remoteEntry.js",
       remotes: {
-        StudentForm: "StudentApp1@http://localhost:8080/remoteEntry.js",
+        StudentForm:
+          "StudentApp1@https://haneefmhmmd-student-app-1.netlify.app/remoteentry.js",
       },
       exposes: {},
       shared: {

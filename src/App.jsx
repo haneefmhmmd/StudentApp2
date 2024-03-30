@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-
-const StudentForm = lazy(() => import("StudentForm/form"));
-
 import "./index.css";
+
+// const StudentForm = lazy(() => import("StudentForm/form"));
+import StudentForm from "StudentForm/form";
 
 const App = () => (
   <>
@@ -16,9 +16,10 @@ const App = () => (
       </div>
     </nav>
     <main className="container mt-5">
-      <Suspense fallback={<span>Loading...</span>}>
-        <StudentForm />
-      </Suspense>
+      <StudentForm />
+      {/* <Suspense fallback={<span>Loading...</span>}>
+        <A />
+      </Suspense> */}
     </main>
   </>
 );
